@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
 
+import { ModeToggle } from "./toggle-mode";
+
 const menuItems = [
 	{ name: "Company", href: "#link" },
 	{ name: "About Us", href: "#link" },
@@ -116,6 +118,7 @@ export const HeroHeader = () => {
 										<span>Apply</span>
 									</Link>
 								</Button>
+								<ModeToggle />
 							</div>
 						</div>
 					</div>
