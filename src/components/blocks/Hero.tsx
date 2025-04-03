@@ -187,20 +187,14 @@ export default function HeroSection() {
 									aria-hidden
 									className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
 								/>
-								<div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+								<div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20  relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4  shadow-lg shadow-zinc-950/15 ring-1">
 									<Image
-										className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
-										src="/assets/images/1.jpg"
+										className=" relative  rounded-2xl  aspect-square p-0 m-0"
+										// className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
+										src="/assets/images/concierge_slider.png"
 										alt="app screen"
-										width="2700"
-										height="1440"
-									/>
-									<Image
-										className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
-										src="/mail2-light.png"
-										alt="app screen"
-										width="2700"
-										height="1440"
+										width="1300"
+										height="1300"
 									/>
 								</div>
 							</div>
@@ -223,7 +217,15 @@ export default function HeroSection() {
 							{[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => {
 								return (
 									<div key={index} className="flex">
-										<p className="text-center"> Vendor name or logo</p>
+										<div className="flex">
+											<img
+												className="mx-auto h-5 w-fit dark:invert"
+												src="https://html.tailus.io/blocks/customers/nvidia.svg"
+												alt="Nvidia Logo"
+												height="20"
+												width="auto"
+											/>
+										</div>
 									</div>
 								);
 							})}
