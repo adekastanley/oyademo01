@@ -215,6 +215,7 @@ export default function HeroSection() {
 						</div>
 						<div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
 							{[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => {
+								// eslint-disable-line @typescript-eslint/no-unused-vars
 								return (
 									<div key={index} className="flex">
 										<div className="flex">
